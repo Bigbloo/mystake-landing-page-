@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthode des 3 Os - Gagnez jusqu'à +423€ par jour</title>
+    <style>
+        /* Style général - Dark Mode */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #6b00b3, #2d0057);
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        
+        /* Vidéo */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+        }
+        
+        video {
+            width: 100%;
+            display: block;
+        }
+        
+        /* Méthode */
+        .method {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #ffcc00;
+        }
+        
+        .method h2 {
+            color: #ffcc00;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .method-steps {
+            margin-top: 30px;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .step-number {
+            background-color: #ffcc00;
+            color: #121212;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .step-text {
+            font-size: 1.2rem;
+        }
+        
+        /* Témoignages */
+        .testimonials {
+            margin-bottom: 40px;
+        }
+        
+        .testimonials h2 {
+            color: #ffcc00;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .testimonial {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .testimonial-content {
+            padding: 20px;
+        }
+        
+        .testimonial-content h3 {
+            color: #ffcc00;
+            margin-top: 0;
+        }
+        
+        .testimonial-content p {
+            margin-bottom: 0;
+        }
+        
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #6b00b3, #2d0057);
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #121212;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .btn:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+            animation: none;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(255, 204, 0, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 204, 0, 0);
+            }
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta h2 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                font-size: 1.2rem;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RÉVÉLATION : LA MÉTHODE DES 3 OS</h1>
+            <p class="subtitle">Découvrez comment gagner jusqu'à +423€ par jour avec cette stratégie simple et efficace</p>
+        </header>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="video-trois-os.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+        
+        <div class="method">
+            <h2>La Méthode des 3 Os qui Fait Gagner +423€ par Jour</h2>
+            <p>Cette stratégie exclusive a déjà permis à des centaines de personnes de générer des gains réguliers. Suivez simplement ces 4 étapes pour maximiser vos chances de succès :</p>
+            
+            <div class="method-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Choisis une mise et mets 3 os dans la partie</div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Lance une partie et arrête là directement, pour voir la position des 3 os</div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Relance la partie et ouvre les 3 cloches où étaient les 3 os juste avant</div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Faire 10 parties maximum par jour</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2>Ils ont Réussi avec la Méthode des 3 Os</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="temoignage-1.jpeg" alt="Témoignage 1">
+                    <div class="testimonial-content">
+                        <h3>Thomas, 28 ans</h3>
+                        <p>"J'ai gagné +189€ dès ma première journée en appliquant cette méthode. Incroyable !"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="temoignage-2.jpeg" alt="Témoignage 2">
+                    <div class="testimonial-content">
+                        <h3>Sophie, 32 ans</h3>
+                        <p>"Sceptique au début, j'ai été bluffée par les résultats. +423€ en une semaine !"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="temoignage-3.jpeg" alt="Témoignage 3">
+                    <div class="testimonial-content">
+                        <h3>Maxime, 25 ans</h3>
+                        <p>"Cette méthode a changé ma façon de jouer. Mes gains sont désormais réguliers."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="temoignage-4.jpeg" alt="Témoignage 4">
+                    <div class="testimonial-content">
+                        <h3>Julie, 30 ans</h3>
+                        <p>"Je n'y croyais pas, mais les résultats parlent d'eux-mêmes. Merci pour cette méthode !"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="temoignage-5.jpeg" alt="Témoignage 5">
+                    <div class="testimonial-content">
+                        <h3>Alexandre, 27 ans</h3>
+                        <p>"Enfin une méthode qui fonctionne vraiment. +250€ en 3 jours seulement."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="temoignage-6.jpeg" alt="Témoignage 6">
+                    <div class="testimonial-content">
+                        <h3>Emma, 24 ans</h3>
+                        <p>"La méthode des 3 os est simple mais redoutablement efficace. Je recommande !"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h2>PRÊT À COMMENCER DÈS MAINTENANT ?</h2>
+            <p>Ne perdez pas une minute de plus. Rejoignez les centaines de personnes qui gagnent déjà avec la méthode des 3 os. Cliquez sur le bouton ci-dessous pour accéder à la plateforme et commencer à appliquer cette stratégie gagnante !</p>
+            <a href="https://go.affiliatemystake.com/visit/?bta=3142912&nci=5358" class="btn">COMMENCER MAINTENANT</a>
+        </div>
+        
+        <footer>
+            <p>© 2025 - La Méthode des 3 Os | Les résultats peuvent varier. Jeu responsable.</p>
+        </footer>
+    </div>
+</body>
+</html>
